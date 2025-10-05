@@ -25,7 +25,7 @@ const senjata = [
   },
   {
     nama: "Kujang",
-    asal: "Jawa Barat (Sunda)",
+    asal: "Jawa Barat",
     gambar: "images/kujang.png",
     deskripsi: "Kujang merupakan senjata tradisional Sunda yang dipercaya memiliki kekuatan magis."
   },
