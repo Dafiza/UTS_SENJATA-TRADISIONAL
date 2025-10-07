@@ -48,6 +48,10 @@ const cancelBtn = document.getElementById("cancel-edit");
 
 // Re-render tampilan
 function tampilkanSenjata(data) {
+  window.addEventListener("storage", () => {
+  dataSenjata = JSON.parse(localStorage.getItem("senjataData")) || senjata;
+  generateFilterOptions();
+});
   const container = document.getElementById("senjata-container");
   container.innerHTML = "";
 

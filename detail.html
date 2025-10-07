@@ -7,16 +7,20 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <center>
-  <header class="header">
-    <h1>Detail Senjata</h1>
-    <button onclick="window.history.back()" class="back-button">← Kembali</button>
-  </header>
-    </center>
+  <center>
+    <header class="header">
+      <h1>Detail Senjata</h1>
+      <button onclick="window.history.back()" class="back-button">← Kembali</button>
+    </header>
+  </center>
 
-  <main id="detail-container" class="weapon-detail-container">
-    <!-- Konten detail akan dimuat lewat detail.js -->
+  <main>
+    <div id="detail-container" class="weapon-detail-container"></div>
+
+    <div id="form-detail-container"></div>
   </main>
+
+  <script src="database/senjata.js"></script>
   <script src="database/detailSenjata.js"></script>
   <script src="detail.js"></script>
 </body>
