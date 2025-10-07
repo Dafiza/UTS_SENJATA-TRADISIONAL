@@ -1,0 +1,69 @@
+const hero = document.querySelector(".hero");
+const backgrounds = [
+  "images/keris.png",
+  "images/mandau.png",
+  "images/rencong.png",
+  "images/badik.png",
+  "images/kujang.png",
+  "images/parang.png",
+  "images/sumpit.png",
+  "images/tombak.png",
+  "images/golok.png",
+  "images/klewang.png"
+];
+let currentBg = 0;
+
+// Change background every 5 seconds
+function changeBackground() {
+  hero.style.backgroundImage = `url('${backgrounds[currentBg]}')`;
+  currentBg = (currentBg + 1) % backgrounds.length;
+}
+setInterval(changeBackground, 5000);
+changeBackground();
+
+// container senjata
+const container = document.getElementById("senjata-container");
+
+// Function to navigate to detail page
+function lihatDetail(nama) {
+  window.location.href = `detail.html?nama=${encodeURIComponent(nama)}`;
+}
+
+function tampilkanSenjata(data) {
+  container.innerHTML = "";
+  data.forEach(s => {
+    const card = `
+      <div class="card">
+        <img src="${s.gambar}" alt="${s.nama}" loading="lazy">
+        <h3>${s.nama}</h3>
+        <p><strong>Asal:</strong> ${s.asal}</p>
+        <p>${s.deskripsi}</p>
+        <button class="btn" onclick="lihatDetail('${s.nama}')">Lihat Detail</button>
+      </div>
+    `;
+    container.innerHTML += card;
+  });
+}
+
+tampilkanSenjata(senjata);
+
+// search functionality
+document.getElementById("search").addEventListener("input", function() {
+  const keyword = this.value.toLowerCase();
+  const hasil = senjata.filter(s =>
+    s.nama.toLowerCase().includes(keyword) ||
+    s.asal.toLowerCase().includes(keyword)
+  );
+  tampilkanSenjata(hasil);
+});
+
+// Navbar scroll effect
+window.addEventListener("scroll", function() {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+
