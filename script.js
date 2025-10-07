@@ -49,3 +49,8 @@ document.getElementById("search").addEventListener("input", function() {
   );
   tampilkanSenjata(hasil);
 });
+
+// Render awal
+tampilkanSenjata(dataSenjata);
+generateFilterOptions();
+

@@ -146,6 +146,209 @@ footer {
   margin-top: 30px;
 }
 
+/* ============================= */
+/* WEAPON DETAIL PAGE STYLING */
+/* ============================= */
+
+.weapon-detail {
+  max-width: 850px;
+  margin: 100px auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.weapon-detail img {
+  width: 320px;
+  height: auto;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weapon-detail img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.weapon-detail h2 {
+  font-size: 2.1rem;
+  color: #d35400;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.weapon-detail p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.7;
+  margin: 10px 0;
+}
+
+.weapon-detail p strong {
+  color: #111;
+}
+
+/* Back button (if used in header) */
+.back-button {
+  display: inline-block;
+  background: #e67e22;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background: #d35400;
+}
+
+/* Simple fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .weapon-detail {
+    padding: 25px;
+    margin: 60px 15px;
+  }
+
+  .weapon-detail img {
+    width: 240px;
+  }
+
+  .weapon-detail h2 {
+    font-size: 1.6rem;
+  }
+
+  .weapon-detail p {
+    font-size: 0.95rem;
+  }
+}
+
+.form-section {
+  background: #fff8f0;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#senjata-form input,
+#senjata-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn.save {
+  background: #009688;
+  color: white;
+}
+
+.btn.cancel {
+  background: #f44336;
+  color: white;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.search-box, .filter-box {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#search, #filter-asal {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+#filter-asal {
+  margin-top: 10px;
+  width: 200px;
+}
+
+.add-detail {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-detail {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff7ef;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.form-detail form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-detail input,
+.form-detail textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.form-detail button {
+  padding: 10px;
+  background: #ff914d;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form-detail button:hover {
+  background: #ff7a1f;
+}
+
+
 /* Animations */
 @keyframes fadeInZoom {
   from { opacity: 0; transform: scale(1.1); }
