@@ -1,4 +1,15 @@
 // =============================
+// NAVBAR TOGGLE (MENU HAMBURGER)
+// =============================
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+navToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+  navToggle.classList.toggle('active');
+});
+
+// =============================
 // DATA MANAGEMENT (LOCALSTORAGE)
 // =============================
 
@@ -6,6 +17,8 @@
  * Menggabungkan data awal dari senjata.js dan detailSenjata.js
  * dan menyimpannya ke localStorage jika belum ada.
  */
+
+
 function initializeData() {
   // Mengambil data dari variabel global (dari file senjata.js dan detailSenjata.js)
   const initialSenjata = [...senjata];

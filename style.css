@@ -18,6 +18,186 @@ h2 {
 }
 
 /* =================================== */
+/* === TENTANG PAGE STYLING === */
+/* =================================== */
+
+.content-wrapper {
+  max-width: 900px;
+  margin: 40px auto; /* Memberi jarak dari atas/bawah dan tengah secara horizontal */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 1s ease;
+}
+
+.about-container h1, .about-container h2 {
+  color: #d35400; /* Warna oranye khas tema */
+  text-align: left;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
+}
+
+.about-container h1 {
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 1.5rem;
+  text-align: justify; /* Teks rata kiri-kanan */
+}
+
+.about-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+/* =================================== */
+/* === NAVBAR STYLING === */
+/* =================================== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Mendorong brand ke kiri dan menu ke kanan */
+  align-items: center;
+  background-color: #333; /* Warna gelap agar kontras */
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: sticky; /* Tetap di atas saat scroll */
+  top: 0;
+  z-index: 1000; /* Memastikan navbar di atas konten lain */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* === Brand / Logo di Kiri === */
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff8f0; /* Warna krem agar cocok dengan body */
+  text-decoration: none;
+}
+
+/* === Menu Navigasi di Kanan === */
+.nav-menu {
+  display: flex;
+  list-style: none; /* Menghilangkan bullets */
+  margin: 0;
+  padding: 0;
+  gap: 2rem; /* Jarak antar item menu */
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Efek garis bawah saat hover */
+.nav-menu li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0); /* Awalnya garis tidak terlihat */
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e67e22; /* Warna oranye khas tema */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-menu li a:hover {
+  color: #e67e22; /* Warna teks berubah saat hover */
+}
+
+.nav-menu li a:hover::after {
+  transform: scaleX(1); /* Garis muncul dari kanan ke kiri */
+  transform-origin: bottom left;
+}
+
+/* Menyembunyikan hamburger di desktop */
+.nav-toggle {
+  display: none;
+}
+
+
+/* =================================== */
+/* === RESPONSIVE (MOBILE VIEW) === */
+/* =================================== */
+
+@media (max-width: 768px) {
+  /* Tampilkan Tombol Hamburger */
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .nav-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Sembunyikan Menu Desktop */
+  .nav-menu {
+    display: none; /* Sembunyikan menu secara default */
+    position: absolute;
+    top: 100%; /* Posisi di bawah navbar */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    flex-direction: column; /* Ubah orientasi menjadi vertikal */
+    align-items: center;
+    padding: 1rem 0;
+    gap: 0;
+  }
+
+  .nav-menu.active {
+    display: flex; /* Tampilkan menu saat kelas 'active' ditambahkan */
+  }
+
+  .nav-menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-menu li a {
+    display: block;
+    padding: 1rem 0;
+    width: 100%;
+  }
+
+  /* Animasi Tombol Hamburger menjadi 'X' */
+  .nav-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .nav-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* =================================== */
 /* === HEADER & HERO SECTION === */
 /* =================================== */
 
@@ -419,3 +599,4 @@ footer {
     font-size: 1rem;
   }
 }
+

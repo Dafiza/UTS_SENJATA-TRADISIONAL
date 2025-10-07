@@ -85,5 +85,27 @@ const weaponDetails = {
     description: "Tombak merupakan senjata serbaguna yang digunakan di banyak daerah Indonesia, termasuk Sumatera. Senjata ini efektif untuk pertempuran jarak dekat maupun lempar, dan memiliki peran penting dalam upacara adat.",
     history: "Tombak adalah salah satu senjata tertua dalam peradaban manusia. Di Nusantara, tombak telah digunakan sejak zaman prasejarah. Pada era kerajaan seperti Sriwijaya di Sumatera, tombak menjadi senjata utama bagi pasukan infanteri. Banyak pusaka kerajaan yang berbentuk tombak dan diyakini memiliki kekuatan magis serta nilai historis yang tinggi.",
     image: "images/tombak.png"
+  },
+
+    "golok": {
+    name: "Golok",
+    origin: "Betawi (Jawa Barat)",
+    type: "Senjata tebas dan alat kerja",
+    material: "Besi dan kayu",
+    length: "30-60 cm",
+    description: "Golok adalah senjata sekaligus alat sehari-hari masyarakat Betawi dan Sunda. Fungsinya beragam, mulai dari berkebun, berburu, hingga bela diri.",
+    history: "Golok telah lama digunakan oleh masyarakat Jawa Barat, terutama Betawi. Dalam sejarah, golok identik dengan jawara Betawi sebagai simbol keberanian dan keteguhan. Hingga kini, golok masih digunakan dalam seni bela diri silat serta menjadi ikon budaya Betawi.",
+    image: "images/golok.png"
+  },
+  
+  "klewang": {
+    name: "Klewang",
+    origin: "Sumatera (Melayu)",
+    type: "Senjata tebas",
+    material: "Besi dan kayu",
+    length: "50-70 cm",
+    description: "Klewang adalah senjata tradisional Melayu berbentuk seperti pedang pendek, digunakan dalam peperangan dan pertahanan diri.",
+    history: "Klewang banyak digunakan di Sumatera, terutama oleh masyarakat Melayu pada masa kerajaan-kerajaan pesisir. Pada masa kolonial Belanda, klewang juga diproduksi massal untuk keperluan militer Hindia Belanda, sehingga dikenal luas hingga ke luar negeri.",
+    image: "images/klewang.png"
   }
 };

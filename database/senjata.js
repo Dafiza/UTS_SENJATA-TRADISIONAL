@@ -46,5 +46,17 @@ const senjata = [
     asal: "Sumatera",
     gambar: "images/tombak.png",
     deskripsi: "Tombak digunakan oleh masyarakat Sumatera dalam peperangan maupun upacara adat."
+  },
+  {
+    nama: "Golok",
+    asal: "Betawi",
+    gambar: "images/golok.png",
+    deskripsi: "Golok adalah senjata sekaligus alat sehari-hari masyarakat Betawi dan Sunda."
+  },
+  {
+    nama: "Klewang",
+    asal: "Sumatera",
+    gambar: "images/klewang.png",
+    deskripsi: "Klewang adalah senjata tradisional Melayu berbentuk pedang pendek."
   }
 ];
