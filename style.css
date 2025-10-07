@@ -47,16 +47,6 @@ body {
   margin-bottom: 25px;
 }
 
-/* .btn-hero {
-  padding: 12px 25px;
-  background: #e67e22;
-  color: white;
-  text-decoration: none;
-  font-size: 1.1em;
-  border-radius: 25px;
-  transition: background 0.3s;
-} */
-
 .btn-hero:hover {
   background: #d35400;
 }
@@ -237,115 +227,6 @@ footer {
   .weapon-detail p {
     font-size: 0.95rem;
   }
-}
-
-.form-section {
-  background: #fff8f0;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 12px;
-  width: 80%;
-  max-width: 600px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.form-section h2 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-#senjata-form input,
-#senjata-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-.form-buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.btn.save {
-  background: #009688;
-  color: white;
-}
-
-.btn.cancel {
-  background: #f44336;
-  color: white;
-}
-
-.card-buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 8px;
-}
-
-.search-box, .filter-box {
-  text-align: center;
-  margin: 20px 0;
-}
-
-#search, #filter-asal {
-  padding: 10px;
-  width: 80%;
-  max-width: 400px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-}
-
-#filter-asal {
-  margin-top: 10px;
-  width: 200px;
-}
-
-.add-detail {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.form-detail {
-  max-width: 500px;
-  margin: 30px auto;
-  padding: 20px;
-  background: #fff7ef;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-}
-
-.form-detail form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.form-detail input,
-.form-detail textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1em;
-}
-
-.form-detail button {
-  padding: 10px;
-  background: #ff914d;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.form-detail button:hover {
-  background: #ff7a1f;
 }
 
 

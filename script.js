@@ -22,16 +22,21 @@ changeBackground();
 // container senjata
 const container = document.getElementById("senjata-container");
 
+// Function to navigate to detail page
+function lihatDetail(nama) {
+  window.location.href = `detail.html?nama=${encodeURIComponent(nama)}`;
+}
+
 function tampilkanSenjata(data) {
   container.innerHTML = "";
   data.forEach(s => {
     const card = `
       <div class="card">
-        <img src="${s.gambar}" alt="${s.nama}">
+        <img src="${s.gambar}" alt="${s.nama}" loading="lazy">
         <h3>${s.nama}</h3>
         <p><strong>Asal:</strong> ${s.asal}</p>
         <p>${s.deskripsi}</p>
-        <button class="btn">Lihat Detail</button>
+        <button class="btn" onclick="lihatDetail('${s.nama}')">Lihat Detail</button>
       </div>
     `;
     container.innerHTML += card;
@@ -50,7 +55,4 @@ document.getElementById("search").addEventListener("input", function() {
   tampilkanSenjata(hasil);
 });
 
-// Render awal
-tampilkanSenjata(dataSenjata);
-generateFilterOptions();
 
