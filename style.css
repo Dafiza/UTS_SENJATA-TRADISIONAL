@@ -6,7 +6,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: #fff8f0; /* Warna latar belakang krem lembut */
+  background: #fff8f0;
   color: #333;
 }
 
@@ -23,7 +23,7 @@ h2 {
 
 .content-wrapper {
   max-width: 900px;
-  margin: 40px auto; /* Memberi jarak dari atas/bawah dan tengah secara horizontal */
+  margin: 40px auto; 
   padding: 20px;
   background-color: #ffffff;
   border-radius: 15px;
@@ -32,7 +32,7 @@ h2 {
 }
 
 .about-container h1, .about-container h2 {
-  color: #d35400; /* Warna oranye khas tema */
+  color: #d35400; 
   text-align: left;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
@@ -50,7 +50,7 @@ h2 {
   line-height: 1.8;
   color: #444;
   margin-bottom: 1.5rem;
-  text-align: justify; /* Teks rata kiri-kanan */
+  text-align: justify; 
 }
 
 .about-container img {
@@ -66,14 +66,14 @@ h2 {
 
 .navbar {
   display: flex;
-  justify-content: space-between; /* Mendorong brand ke kiri dan menu ke kanan */
+  justify-content: space-between; 
   align-items: center;
-  background-color: #333; /* Warna gelap agar kontras */
+  background-color: #333;
   padding: 1rem 2rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  position: sticky; /* Tetap di atas saat scroll */
+  position: sticky; 
   top: 0;
-  z-index: 1000; /* Memastikan navbar di atas konten lain */
+  z-index: 1000; 
   width: 100%;
   box-sizing: border-box;
 }
@@ -82,17 +82,17 @@ h2 {
 .nav-brand {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff8f0; /* Warna krem agar cocok dengan body */
+  color: #fff8f0; 
   text-decoration: none;
 }
 
 /* === Menu Navigasi di Kanan === */
 .nav-menu {
   display: flex;
-  list-style: none; /* Menghilangkan bullets */
+  list-style: none; 
   margin: 0;
   padding: 0;
-  gap: 2rem; /* Jarak antar item menu */
+  gap: 2rem; 
 }
 
 .nav-menu li a {
@@ -109,25 +109,24 @@ h2 {
   content: '';
   position: absolute;
   width: 100%;
-  transform: scaleX(0); /* Awalnya garis tidak terlihat */
+  transform: scaleX(0); 
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #e67e22; /* Warna oranye khas tema */
+  background-color: #e67e22; 
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
 }
 
 .nav-menu li a:hover {
-  color: #e67e22; /* Warna teks berubah saat hover */
+  color: #e67e22; 
 }
 
 .nav-menu li a:hover::after {
-  transform: scaleX(1); /* Garis muncul dari kanan ke kiri */
+  transform: scaleX(1); 
   transform-origin: bottom left;
 }
 
-/* Menyembunyikan hamburger di desktop */
 .nav-toggle {
   display: none;
 }
@@ -158,20 +157,20 @@ h2 {
   
   /* Sembunyikan Menu Desktop */
   .nav-menu {
-    display: none; /* Sembunyikan menu secara default */
+    display: none;
     position: absolute;
-    top: 100%; /* Posisi di bawah navbar */
+    top: 100%; 
     left: 0;
     width: 100%;
     background-color: #333;
-    flex-direction: column; /* Ubah orientasi menjadi vertikal */
+    flex-direction: column; 
     align-items: center;
     padding: 1rem 0;
     gap: 0;
   }
 
   .nav-menu.active {
-    display: flex; /* Tampilkan menu saat kelas 'active' ditambahkan */
+    display: flex; 
   }
 
   .nav-menu li {
@@ -185,7 +184,6 @@ h2 {
     width: 100%;
   }
 
-  /* Animasi Tombol Hamburger menjadi 'X' */
   .nav-toggle.active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -223,7 +221,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Lapisan gelap untuk kontras teks */
+  background: rgba(0, 0, 0, 0.5); 
 }
 
 .hero-content {
@@ -332,7 +330,7 @@ h2 {
 
 .card p {
   margin: 0 15px 15px;
-  flex-grow: 1; /* Membuat deskripsi mengisi ruang tersedia */
+  flex-grow: 1;
   font-size: 0.95rem;
   line-height: 1.5;
 }
@@ -342,7 +340,7 @@ h2 {
   justify-content: space-around;
   padding: 0 10px 10px;
   gap: 8px;
-  margin-top: auto; /* Mendorong tombol ke bawah card */
+  margin-top: auto;
 }
 
 /* =================================== */
@@ -372,7 +370,7 @@ h2 {
   flex: 1;
   font-size: 0.85rem;
   padding: 8px;
-  background: #e67e22; /* Oranye */
+  background: #e67e22; 
 }
 
 .card-buttons .btn:hover {
@@ -381,7 +379,7 @@ h2 {
 
 /* Tombol Edit */
 .btn.edit {
-  background-color: #3498db; /* Biru */
+  background-color: #3498db; 
 }
 .btn.edit:hover {
   background-color: #2980b9;
@@ -389,7 +387,7 @@ h2 {
 
 /* Tombol Hapus */
 .btn.delete {
-  background-color: #e74c3c; /* Merah */
+  background-color: #e74c3c; 
 }
 .btn.delete:hover {
   background-color: #c0392b;
@@ -397,7 +395,7 @@ h2 {
 
 /* Tombol Simpan (di form) */
 .btn.save {
-  background-color: #007bff; /* Biru terang */
+  background-color: #007bff; 
 }
 .btn.save:hover {
   background-color: #0069d9;
@@ -405,7 +403,7 @@ h2 {
 
 /* Tombol Batal (di form) */
 .btn.cancel {
-  background-color: #6c757d; /* Abu-abu */
+  background-color: #6c757d; 
   color: white;
 }
 .btn.cancel:hover {
