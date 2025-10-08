@@ -1,6 +1,8 @@
 // =============================
-// NAVBAR TOGGLE (MENU HAMBURGER)
+// SETUP & INITIALIZATION
 // =============================
+
+// navbar toggle 
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -8,16 +10,6 @@ navToggle.addEventListener('click', () => {
   navMenu.classList.toggle('active');
   navToggle.classList.toggle('active');
 });
-
-// =============================
-// DATA MANAGEMENT (LOCALSTORAGE)
-// =============================
-
-/**
- * Menggabungkan data awal dari senjata.js dan detailSenjata.js
- * dan menyimpannya ke localStorage jika belum ada.
- */
-
 
 function initializeData() {
   // Mengambil data dari variabel global (dari file senjata.js dan detailSenjata.js)
@@ -62,17 +54,13 @@ function saveSenjataData(data) {
   localStorage.setItem('senjataDB', JSON.stringify(data));
 }
 
-
-// =============================
-// SETUP & INITIALIZATION
-// =============================
-
 // Hero background changer
 const hero = document.querySelector(".hero");
 const backgrounds = [
   "images/keris.png", "images/mandau.png", "images/rencong.png",
   "images/badik.png", "images/kujang.png", "images/parang.png",
-  "images/sumpit.png", "images/tombak.png"
+  "images/sumpit.png", "images/tombak.png", "images/golok.png",
+  "images/klewang.png"
 ];
 let currentBg = 0;
 
